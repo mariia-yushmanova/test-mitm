@@ -1,0 +1,6 @@
+# Add file here to ignore them from prettier formatting
+/dist
+/coverage
+/build
+/.next
+node_modules

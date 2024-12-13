@@ -1,0 +1,98 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 70px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+
+  .title {
+    padding-bottom: 20px;
+
+    @media (max-width: 578px) {
+      padding-bottom: 0;
+      align-self: start;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 33px;
+    }
+  }
+
+  @media (max-width: 578px) {
+    padding: 28px 15px 47px 15px;
+    gap: 34px;
+  }
+}
+
+.block_container {
+  display: flex;
+  gap: 30px;
+  padding-top: 60px;
+
+  .block {
+    width: 628px;
+    height: 293px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    p,
+    li {
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 300;
+    }
+
+    @media (max-width: 1330px) {
+      width: 520px;
+      padding: 30px;
+    }
+
+    @media (max-width: 1100px) {
+      width: 345px;
+      padding: 30px 17px;
+      gap: 22px;
+    }
+  }
+
+  .practice {
+    background-color: #ff3535;
+    position: relative;
+    color: white;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-style: solid;
+      border-width: 0 43px 43px 0;
+      border-color: transparent white #cd1800 transparent;
+    }
+
+    p {
+      max-width: 400px;
+    }
+
+    @media (max-width: 578px) {
+      height: 231px;
+    }
+  }
+
+  .attestation {
+    background-color: #2d2c2a;
+    color: white;
+
+    @media (max-width: 578px) {
+      height: 342px;
+    }
+  }
+
+  @media (max-width: 920px) {
+    padding-top: 0px;
+    flex-direction: column;
+  }
+}

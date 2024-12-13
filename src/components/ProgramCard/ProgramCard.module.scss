@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @media (max-width: 578px) {
+    width: 100%;
+    gap: 25px;
+  }
+}
+
+.modules {
+  width: 100%;
+  display: flex;
+  gap: 45px;
+
+  @media (max-width: 920px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 578px) {
+    gap: 10px;
+    flex-direction: column;
+  }
+}
